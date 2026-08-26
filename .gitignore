@@ -1,3 +1,24 @@
+# Compiled Binaries & Output Folder
 bin/
 *.exe
+*.out
+*.app
+
+# Object Files & Libraries
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+
+# Temporary Linker & Debug Files
+*.tmp*
 *.exe.tmp*
+*.pdb
+*.ilk
+
+# OS & System Temp Files
+.DS_Store
+Thumbs.db
