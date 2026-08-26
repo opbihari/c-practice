@@ -14,9 +14,9 @@ int main() {
     float mediumNumber = 123.456f;
     double largeNumber;
     largeNumber = smallNumber;
-    printf("Small to large: %f\n",largeNumber);
+    printf("Small to large: %.1f\n",largeNumber);
     largeNumber = mediumNumber;
-    printf("Medium to large: %f\n",largeNumber);
+    printf("Medium to large: %.1f\n",largeNumber);
     return 0;
 
 }
