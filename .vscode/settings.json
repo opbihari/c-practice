@@ -1,6 +1,6 @@
 {
     "code-runner.executorMap": {
-        "c": "cd \"$dir\" && clang \"$fileName\" -o \"$workspaceRoot/bin/$fileNameWithoutExt.exe\" && \"$workspaceRoot/bin/$fileNameWithoutExt.exe\""
+        "c": "cd \"$dir\"; clang \"$fileName\" -o \"$workspaceRoot/bin/$fileNameWithoutExt.exe\"; if ($?) { & \"$workspaceRoot/bin/$fileNameWithoutExt.exe\" }"
     },
     "code-runner.clearPreviousOutput": true,
     "code-runner.saveFileBeforeRun": true,
