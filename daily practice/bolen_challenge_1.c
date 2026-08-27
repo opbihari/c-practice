@@ -17,14 +17,13 @@ int main(){
     else{
         isEligible = 0;
     }
-    
     if (isEligible) {
         printf("Person is eligible  for discount");
 
     }
     else
     {
-        printf("Persion is  not eligible for discount") ;  
+        printf("Person is  not eligible for discount") ;  
     }
-      
+    return 0; 
 }
