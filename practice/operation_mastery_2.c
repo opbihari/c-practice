@@ -1,0 +1,63 @@
+/*
+Let's create a program that uses various operators we've learned:
+
+1. Declare and initialize two integer variables: num1 to 25 and num2 to 7.
+2. Calculate the following values:
+   • The sum of num1 and num2
+   • The difference between num1 and num2
+   • The product of num1 and num2
+   • The quotient when dividing num1 by num2
+   • The remainder when dividing num1 by num2
+
+3. Print the results in the format:
+
+num1 = 25, num2 = 7
+Sum: 32
+Difference: 18
+Product: 175
+Quotient: 3
+Remainder: 4
+
+4. Check if num1 is greater than num2 AND the remainder when dividing num1 by 2 is 1 (i.e., if num1 is odd). Store the result in a variable called result1.
+5. Check if num2 is less than 10 OR num1 is even. Store the result in a variable called result2.
+6. Print the logical operation results in the format:
+
+result1: 1
+result2: 1
+*/
+
+#include <stdio.h>
+
+int main() {
+    // 1. Declare and initialize variables
+    int num1 = 25;
+    int num2 = 7;
+
+    // 2. Perform calculations
+    int sum = num1 + num2;
+    int difference = num1 - num2;
+    int product = num1 * num2;
+    int quotient = num1 / num2;
+    int remainder = num1 % num2;
+
+    // 3. Print arithmetic results
+    printf("num1 = %d, num2 = %d\n", num1, num2);
+    printf("Sum: %d\n", sum);
+    printf("Difference: %d\n", difference);
+    printf("Product: %d\n", product);
+    printf("Quotient: %d\n", quotient);
+    printf("Remainder: %d\n", remainder);
+    printf("\n");
+
+    // 4. Logical operation 1: num1 > num2 AND num1 is odd
+    int result1 = (num1 > num2) && (num1 % 2 == 1);
+
+    // 5. Logical operation 2: num2 < 10 OR num1 is even
+    int result2 = (num2 < 10) || (num1 % 2 == 0);
+
+    // 6. Print logical operation results
+    printf("result1: %d\n", result1);
+    printf("result2: %d\n", result2);
+
+    return 0;
+}
