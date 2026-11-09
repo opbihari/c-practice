@@ -8,7 +8,7 @@ int main(void){
     scanf("%d", &up_to);
 
     for(current_count = 1; current_count <= up_to; current_count++){
-        printf(" %d ,", a);
+        printf(" %d  ", a);
         c = a+b;
         a = b;
         b = c;
