@@ -1,12 +1,11 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
         {
-            "name": "C/C++: Debug Active File (clang + lldb)",
+            "name": "C/C++: Debug Active File (gcc + lldb)",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -21,7 +20,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: clang.exe build active file"
+            "preLaunchTask": "C/C++: gcc.exe build active file"
         }
     ]
 }
