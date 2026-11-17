@@ -65,7 +65,7 @@ void character_pattern(void) {
 
   printf("Do you want to choose character for pattern (y/n)? ");
   scanf(" %c", &custom_choice);
-  custom_choice = (char)tolower((unsigned char)custom_choice);
+  custom_choice = (char)tolower((unsigned char)custom_choice); //line searched on gemini//
 
   if (custom_choice == 'y') {
     printf("Enter the character which you want to print: ");
