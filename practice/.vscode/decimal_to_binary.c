@@ -1,20 +1,22 @@
 #include <stdio.h>
 
 int main(void){
-    int binary = 0, decimal, reminder, final_biary = 0, palace = 10;
+    int decimal, reminder;
+    long long binary = 0;
+    long long palace = 1;
     printf("enter the decimal to change into binary ");
     scanf("%d", &decimal);
+    if (decimal == 0){
+        printf("0\n");
+        return 0;
+    }
     while( decimal > 0){
         reminder = decimal%2;
         decimal = decimal/2;
-        binary = (binary*palace)+ reminder;
+        binary = binary+(palace * reminder);
+        palace = palace*10;
     }
-    while( binary != 0){
-        final_biary = (final_biary*palace) +(binary%10);  
-        binary = binary/10;
-        
-    }
-    printf("%d", final_biary);
+    printf("%lld\n", binary);
 
     return 0;
 }
