@@ -1,22 +1,23 @@
 #include <stdio.h>
 
-int main(void){
-    int octal, reminder;
-    long long binary = 0;
-    long long palace = 1;
-    printf("enter the decimal to change into binary ");
-    scanf("%d", &octal);
-    if (octal == 0){
-        printf("0\n");
-        return 0;
+int main(void) {
+    const char *binary[] = {"000", "001", "010", "011", "100", "101", "110", "111"};
+    char octal[50];
+
+    printf("enter the octal to change into binary: ");
+    scanf("%49s", octal);
+
+    for (int i = 0; octal[i] != '\0'; i++) {
+        int digit = octal[i] - '0';
+
+        if (digit < 0 || digit > 7) {
+            printf("\nInvalid octal digit: %c\n", octal[i]);
+            return 1;
+        }
+
+        printf("%s", binary[digit]);
     }
-    while( octal > 0){
-        reminder = octal%8;
-        octal = octal/8;
-        binary = binary+(palace * reminder);
-        palace = palace*10;
-    }
-    printf("%lld\n", binary);
+    printf("\n");
 
     return 0;
 }
